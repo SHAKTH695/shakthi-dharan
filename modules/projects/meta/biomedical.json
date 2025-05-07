@@ -13,6 +13,12 @@
     "name": "Biohealth tracker and reminder",
     "about": "A biomedical health trackr and reminder app built using online HTML, CSS, and JavaScript. feature real -time vitual monitor,medication reminder aler,and user-friendlly health data visualization.",
     "img_url": "https://img.freepik.com/premium-vector/vector-design-health-tracking-app-icon-icon-style_822882-123733.jpg",
-    "access_url": "https://shakth695.github.io/ai-project/"
+    "access_url": "https://shakth695.github.io/ai-project"
+  },
+  {
+    "name": "Biohealth tracker and reminder",
+    "about": "Explore the evolution, safety, regulatory standards, and future advancements of cardiac pacemakers. This comprehensive guide provides insights into various types of pacemakers, electrical safety, rigorous testing processes, and cutting-edge technologies shaping the future of heart health.",
+    "img_url": "https://cdn-icons-png.flaticon.com/512/3470/3470313.png",
+    "access_url": "https://shakth695.github.io/cardiac-pacemaker/"
   }
 ]
