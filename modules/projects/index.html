@@ -40,6 +40,30 @@
       color: var(--fgcolor);
       border: 1px solid var(--fgcolor);
     }
+    @media (max-width: 1000px) {
+      .buttons {
+        width: 100%;
+      }
+      .buttons button {
+        margin: 0.15rem;
+        width: auto;
+        font-size: 2vw;
+      }
+      .project-card {
+        margin: 0.8rem;
+        width: 88%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .project-card img, #fallback-img {
+        border: 1px solid var(--fgcolor);
+        width: 94%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -74,7 +98,7 @@
 
           const imgTag = project.img_url
             ? `<img src="${project.img_url}" alt="${project.name}" />`
-            : '<div style="width: 100px; height: 100px; background-color: #ddd; border-radius: 6px; display: flex; justify-content: center; align-items: center; color: #666;">No Image</div>';
+            : '<div id="fallback-img" style="width: 100px; height: 100px; background-color: #ddd; border-radius: 6px; display: flex; justify-content: center; align-items: center; color: #666;">No Image</div>';
 
           card.innerHTML = `
             ${imgTag}
