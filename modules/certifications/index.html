@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <style>
     .image-container {
-      display: inline-block;
+      display: flex;
+      align-items: center;
       margin: 10px;
       text-align: center;
+      flex-direction: column;
     }
     .image-container img {
+      display: block;              
       max-width: 200px;
       height: auto;
+      margin: 0 auto;               
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -19,6 +23,32 @@
       color: #555;
       max-width: 220px;
       word-wrap: break-word;
+    }
+    #certifications-container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      max-height: 100%;
+      overflow-y: auto;
+    }
+    @media (max-width: 1000px) {
+      #certifications-container {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+      .image-container {
+        width: 83%;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: 1px solid var(--fgcolor);
+        background-color: var(--light-fg-color);
+      }
+      .image-container img {
+        max-width: 100%;
+        border-radius: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -48,7 +78,7 @@
     img.alt = imageName;
 
     const caption = document.createElement('p');
-    caption.textContent = imageName;
+    caption.textContent = imageName.slice(0, imageName.lastIndexOf('.'));
 
     imageContainer.appendChild(img);
     imageContainer.appendChild(caption);
