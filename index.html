@@ -165,15 +165,11 @@
                 const moduleContainer = document.querySelector('.module');
                 moduleContainer.innerHTML = html;
 
-                const scripts = moduleContainer.querySelectorAll('script');
-                scripts.forEach(script => {
-                    const newScript = document.createElement('script');
-                    Array.from(script.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value));
-                    newScript.textContent = script.textContent;
-                    document.head.appendChild(newScript);
-                    script.remove();
-                });
-
+                if (url.includes('./modules/certifications/index.html')) {
+                    const scriptContent = moduleContainer.querySelector('script').textContent;
+                    eval(scriptContent);
+                }
+                
                 if (url.includes('./modules/projects/index.html')) {
                     setTimeout(() => {
                         loadProjects('biomedical');
