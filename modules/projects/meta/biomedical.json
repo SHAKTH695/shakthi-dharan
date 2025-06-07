@@ -6,7 +6,7 @@
   },
   {
     "name": "Artificial Heart Prototype",
-    "about": "Simulates the pumping action of a human heart for biomedical demonstrations using Arduino Nano, DC pump, IRF549N MOSFET, and Schottky diode.",
+    "about": "Simulates the pumping action of a human artificial heart jarvik 7.",
     "img_url": "https://static.vecteezy.com/system/resources/previews/015/871/117/non_2x/artificial-heart-icon-isometric-robot-suit-vector.jpg",
     "access_url": "https://shakth695.github.io/artificial-heart/"
   },
